@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari 499P | Le Mans Hypercar</title>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <!-- Left side - Ferrari Logo -->
+      <a href="#" class="header-logo">
+        <img src="assets/images/ferrari.png" alt="Ferrari" class="logo-scuderia">
+      </a>
+
+      <!-- Center - Main Navigation -->
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#racing" class="nav-link">HOME</a></li>
+          <li class="nav-item"><a href="#sports-cars" class="nav-link">ABOUT US</a></li>
+          <li class="nav-item"><a href="#collections" class="nav-link">GALLERY</a></li>
+          <li class="nav-item"><a href="#experiences" class="nav-link">PARTS</a></li>
+          </ul>
+      </nav>
+
+      <!-- Right side - Search & Menu Icons -->
+      <div class="header-actions">
+        <button class="icon-btn search-btn" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="icon-btn menu-btn" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Partners and VIDEO BACKGROUND -->
+  <section class="hero">
+    <div class="hero-background">
+      <!-- VIDEO BACKGROUND - This is the updated part -->
+      <video autoplay muted loop playsinline class="hero-video">
+        <!-- Using Ferrari official video from their website -->
+        <source src="assets/videos/Ferrari_Reveals_the_New_Livery_of_the_Ferrari_499P_I_FIA_WEC_1080P.mp4" type="video/mp4">
+        <!-- Fallback image if video doesn't load -->
+        <img src="assets/images/662674823b051f0022eecd44-ferrari-499p-hypercar-2024-apr-powertrain-desk.avif" alt="Ferrari 499P" class="hero-image-fallback">
+      </video>
+      
+      <!-- Dark Overlay -->
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <!-- Hero Content (This part remains exactly the same) -->
+    <div class="hero-content">
+      <!-- HYPERCAR tag -->
+      <div class="hero-category">HYPERCAR</div>
+      
+      <!-- Title -->
+      <h1 class="hero-title">FERRARI 499P</h1>
+      
+      <!-- Description -->
+      <p class="hero-description">
+        The Hypercar that won the 24 Hours of Le Mans three years in a row and was the star of the FIA WEC 2025 World Championship titles.
+      </p>
+      
+      <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Stats Strip -->
+  <div class="stats-strip">
+    <div class="stat-item">
+      <div class="stat-number">3x</div>
+      <div class="stat-label">LE MANS WINS</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">7</div>
+      <div class="stat-label">OVERALL VICTORIES</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">500 kW</div>
+      <div class="stat-label">POWER</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">800V</div>
+      <div class="stat-label">BATTERY</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">4WD</div>
+      <div class="stat-label">TRACTION</div>
+    </div>
+  </div>
+
+  <!-- Overview Section -->
+  <section id="overview" class="section">
+    <div class="section-header">
+      <span class="section-subtitle">A car already part of motorsport history</span>
+      <h2 class="section-title">The Hypercar that has dominated the global endurance scene</h2>
+    </div>
+    
+    <div class="overview-grid">
+      <div class="overview-content">
+        <p class="lead-text">The 499P has already written its name into Ferrari's racing heritage, bringing the Prancing Horse back to the top tier of endurance racing since 2023 with seven overall victories and three consecutive wins at the 24 Hours of Le Mans.</p>
+        <p>At the heart of the project remains the hybrid powertrain: a centrally mounted twin‑turbo V6 engine paired with an electric motor on the front axle, working together to ensure consistent performance and energy efficiency throughout each race.</p>
+        <div class="feature-list">
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>V6 ICE ENGINE</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>500 kW POWER</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>800 V BATTERY</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>4WD TRACTION</span>
+          </div>
+        </div>
+      </div>
+      <div class="overview-image">
+        <img src="assets/images/67af08a0ef0bda001197c27c-499p-2025-launch-land.jpg" alt="Ferrari 499P">
+      </div>
+    </div>
+  </section>
+
+  <!-- Powertrain Section -->
+  <section id="powertrain" class="section dark-section">
+    <div class="section-header centered">
+      <span class="section-subtitle">Hybrid Power Revamped</span>
+      <h2 class="section-title">V6 ICE ENGINE • 500 kW • 800V • 4WD</h2>
+    </div>
+    
+    <div class="powertrain-grid">
+      <div class="powertrain-card">
+        <div class="card-icon"><i class="fas fa-engine"></i></div>
+        <h3>V6 ICE ENGINE</h3>
+        <p>The internal combustion engine delivers a regulation-limited maximum output of 500 kW (680 hp). Derived from Ferrari's road‑going V6 family, it features tailored components and substantial weight optimization.</p>
+      </div>
+      
+      <div class="powertrain-card">
+        <div class="card-icon"><i class="fas fa-bolt"></i></div>
+        <h3>ERS SYSTEM</h3>
+        <p>The Energy Recovery System delivers up to 200 kW (272 hp). Energy recovered under braking is stored in an 800V battery developed using Formula 1 expertise.</p>
+      </div>
+      
+      <div class="powertrain-card">
+        <div class="card-icon"><i class="fas fa-cogs"></i></div>
+        <h3>7-SPEED GEARBOX</h3>
+        <p>Power delivery is handled by a seven‑speed sequential gearbox engineered to withstand the extreme demands of endurance competition.</p>
+      </div>
+      
+      <div class="powertrain-card">
+        <div class="card-icon"><i class="fas fa-car"></i></div>
+        <h3>LOAD-BEARING ENGINE</h3>
+        <p>Unlike the 296 GT3, the V6 in the 499P is fully load‑bearing, contributing structurally to the car's rigidity. The internal combustion unit comprises approximately 500 components.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aerodynamics Section -->
+  <section id="aerodynamics" class="section">
+    <div class="section-header">
+      <span class="section-subtitle">Shaped by the Wind</span>
+      <h2 class="section-title">Balanced Performance</h2>
+    </div>
+    
+    <div class="aero-grid">
+      <div class="aero-content">
+        <p class="lead-text">Recent updates include targeted interventions to control rear brake temperatures and refine aerodynamic stability. Two additional nose elements help optimize airflow distribution with minimal impact on outright lap time.</p>
+        
+        <div class="aero-features">
+          <div class="aero-feature">
+            <h3><i class="fas fa-wing"></i> Adjustable Rear Wing</h3>
+            <p>A regulation‑compliant adjustable aerodynamic device is integrated into the rear wing, allowing engineers to fine‑tune load distribution between the front and rear axles.</p>
+          </div>
+          
+          <div class="aero-feature">
+            <h3><i class="fas fa-wind"></i> Heat Management</h3>
+            <p>Large vents behind the front wheels discharge hot air generated by the braking system. Development included simulations, wind tunnel work, simulator sessions and track testing over more than 22 months.</p>
+          </div>
+          
+          <div class="aero-feature">
+            <h3><i class="fas fa-battery-full"></i> ERS Integration</h3>
+            <p>The electric unit in the 499P operates either independently or in tandem with the front brake discs to decelerate the car during braking. During acceleration, it enables the activation of the 4WD system.</p>
+          </div>
+        </div>
+      </div>
+      <div class="aero-image">
+        <img src="assets/images/20221031013826_Ferrari_499p_front.jpg" alt="Ferrari 499P Aerodynamics">
+      </div>
+    </div>
+  </section>
+
+  <!-- Steering Wheel Section -->
+  <section class="steering-section dark-section">
+    <div class="steering-container">
+      <div class="steering-content">
+        <span class="section-subtitle">RADIO CHECK!</span>
+        <h2 class="section-title">The 499P Steering Wheel</h2>
+        <p>The left side of the 499P's steering wheel features tactile controls that drivers frequently use in the course of a race weekend.</p>
+        
+        <div class="controls-grid">
+          <div class="control-item">
+            <span class="control-code">RA</span>
+            <span class="control-desc">Radio Communication</span>
+          </div>
+          <div class="control-item">
+            <span class="control-code">FCY</span>
+            <span class="control-desc">Full Course Yellow</span>
+          </div>
+          <div class="control-item">
+            <span class="control-code">SCR</span>
+            <span class="control-desc">Scroll Screens</span>
+          </div>
+          <div class="control-item">
+            <span class="control-code">FLA</span>
+            <span class="control-desc">Flash High Beam</span>
+          </div>
+          <div class="control-item">
+            <span class="control-code">PIT</span>
+            <span class="control-desc">Pit Speed Limiter</span>
+          </div>
+          <div class="control-item">
+            <span class="control-code">DRI</span>
+            <span class="control-desc">Drink System</span>
+          </div>
+        </div>
+      </div>
+      <div class="steering-image">
+        <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_steering_wheel_01_1920x1080.webp" alt="Ferrari 499P Steering Wheel">
+      </div>
+    </div>
+  </section>
+
+  <!-- Livery Gallery -->
+  <section id="gallery" class="section">
+    <div class="section-header centered">
+      <span class="section-subtitle">2026 LIVERY</span>
+      <h2 class="section-title">The Evolution of Excellence</h2>
+    </div>
+    
+    <div class="livery-showcase">
+      <div class="livery-main">
+        <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_2026_livery_front_01_1920x1080.webp" alt="Ferrari 499P 2026 Livery" id="mainLivery">
+      </div>
+      <div class="livery-thumbnails">
+        <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_2026_livery_front_01_1920x1080.webp" alt="2026" class="thumbnail active" onclick="changeLivery(this.src)">
+        <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_livery_2025_front_01_1920x1080.webp" alt="2025" class="thumbnail" onclick="changeLivery(this.src)">
+        <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_livery_2024_front_01_1920x1080.webp" alt="2024" class="thumbnail" onclick="changeLivery(this.src)">
+        <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_livery_2023_front_01_1920x1080.webp" alt="2023" class="thumbnail" onclick="changeLivery(this.src)">
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Gallery -->
+  <section class="video-section dark-section">
+    <div class="section-header centered">
+      <span class="section-subtitle">Videos</span>
+      <h2 class="section-title">The 499P in Motion</h2>
+    </div>
+    
+    <div class="swiper-container video-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="video-card">
+            <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_2026_livery_hero_01_1920x1080.webp" alt="Video Thumbnail">
+            <div class="play-button"><i class="fas fa-play"></i></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-card">
+            <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_livery_2025_dynamic_01_1920x1080.webp" alt="Video Thumbnail">
+            <div class="play-button"><i class="fas fa-play"></i></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-card">
+            <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_livery_2024_profile_01_1920x1080.webp" alt="Video Thumbnail">
+            <div class="play-button"><i class="fas fa-play"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Born from <span>Endurance Expertise</span></h2>
+        <p>The Ferrari 499P is a manifesto to our commitment to endurance racing. The four-wheel drive prototype complies with the technical regulations and requirements of the hybrid-engined Le Mans Hypercar class.</p>
+        <p><strong>499P Modificata:</strong> A strictly limited edition car, intended for non-competitive track use, derived from the 499P that won the 24 Hours of Le Mans.</p>
+      </div>
+      
+      <form class="contact-form" id="contactForm">
+        <h3>Request Information</h3>
+        <div class="form-group">
+          <input type="text" id="name" placeholder=" " required>
+          <label for="name">Full Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder=" " required>
+          <label for="email">Email Address</label>
+        </div>
+        <div class="form-group">
+          <input type="text" id="country" placeholder=" ">
+          <label for="country">Country</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="4" placeholder=" "></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="btn-primary">Send Inquiry <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo">FERRARI<span>499P</span></span>
+        <p>The Hypercar that has dominated the global endurance scene over the past three years returns for the 2026 season with a refreshed visual identity and the ambition to consolidate its supremacy.</p>
+      </div>
+      
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#powertrain">Powertrain</a></li>
+            <li><a href="#aerodynamics">Aerodynamics</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2026 Ferrari S.p.A. All rights reserved. The 499P is a trademark of Ferrari.</p>
+      <p>Website inspired by the official Ferrari 499P Hypercar</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
