@@ -3,388 +3,724 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ferrari 499P | Le Mans Hypercar</title>
-  
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  
-  <!-- Custom CSS -->
+  <title>Ferrari Official | Maranello Supercars & Hypercars</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Custom Cursor -->
-  <div class="custom-cursor"></div>
+  <!-- Top Announcement Bar -->
+  <div class="top-ticker">
+    <div class="top-ticker-left">
+      <div class="tricolore-pill"><span></span><span></span><span></span></div>
+      <span class="top-ticker-highlight">WORLD PREMIERE: <span>FERRARI 12CILINDRI</span> • MARANELLO 2026</span>
+    </div>
+    <div class="top-ticker-right">
+      <a href="499.html" class="top-ticker-link"><i class="fas fa-trophy"></i> 24h Le Mans Winner 499P</a>
+      <a href="contact.html" class="top-ticker-link"><i class="fas fa-map-marker-alt"></i> Find Dealer</a>
+    </div>
+  </div>
 
   <!-- Header -->
-  <header class="header">
+  <header class="header has-ticker">
     <div class="header-container">
-      <!-- Left side - Ferrari Logo -->
-      <a href="#" class="header-logo">
-        <img src="assets/images/ferrari.png" alt="Ferrari" class="logo-scuderia">
+      <a href="index.html" class="header-logo">
+        <div class="logo-badge-wrap">
+          <img src="https://www.ferrari.com/etc/designs/ferrari/common/assets/images/logo-scuderia.svg" alt="Ferrari Scuderia" class="logo-scuderia">
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-text">FERRARI</span>
+          <span class="logo-tagline">Maranello • Italia</span>
+        </div>
       </a>
 
-      <!-- Center - Main Navigation -->
       <nav class="header-nav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#racing" class="nav-link">HOME</a></li>
-          <li class="nav-item"><a href="#sports-cars" class="nav-link">ABOUT US</a></li>
-          <li class="nav-item"><a href="#collections" class="nav-link">GALLERY</a></li>
-          <li class="nav-item"><a href="#experiences" class="nav-link">PARTS</a></li>
-          </ul>
+          <li class="nav-item"><a href="index.html" class="nav-link active">HOME</a></li>
+          <li class="nav-item"><a href="models.html" class="nav-link">MODELS <span class="nav-badge">NEW</span></a></li>
+          <li class="nav-item"><a href="499.html" class="nav-link">499P HYPERCAR</a></li>
+          <li class="nav-item"><a href="innovation.html" class="nav-link">INNOVATION</a></li>
+          <li class="nav-item"><a href="heritage.html" class="nav-link">HERITAGE</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">GALLERY</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+        </ul>
       </nav>
 
-      <!-- Right side - Search & Menu Icons -->
       <div class="header-actions">
-        <button class="icon-btn search-btn" aria-label="Search">
-          <i class="fas fa-search"></i>
+        <!-- Sound toggle for ambient audio -->
+        <button class="sound-toggle-btn" title="Toggle Sound">
+          <span class="sound-wave">
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+          </span>
+          <span class="sound-text">SOUND OFF</span>
         </button>
-        <button class="icon-btn menu-btn" aria-label="Menu">
-          <i class="fas fa-bars"></i>
-        </button>
+
+        <a href="#configurator" class="btn-header-cta open-test-drive" data-model="12Cilindri">
+          <i class="fas fa-sliders-h"></i> CONFIGURE
+        </a>
+
+        <button class="icon-btn search-btn" title="Search"><i class="fas fa-search"></i></button>
+        <button class="icon-btn user-btn" title="VIP Portal"><i class="fas fa-user"></i></button>
+        <button class="mobile-menu-toggle" aria-label="Open Navigation"><i class="fas fa-bars"></i></button>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section with Partners and VIDEO BACKGROUND -->
+  <!-- Mobile Drawer Navigation -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <div>
+      <div class="drawer-header">
+        <div class="logo-text-group">
+          <span class="logo-text">FERRARI</span>
+          <span class="logo-tagline">Maranello</span>
+        </div>
+        <button class="drawer-close"><i class="fas fa-times"></i></button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="index.html" class="active">HOME <i class="fas fa-chevron-right"></i></a>
+        <a href="models.html">MODELS <i class="fas fa-chevron-right"></i></a>
+        <a href="499.html">499P HYPERCAR <i class="fas fa-chevron-right"></i></a>
+        <a href="innovation.html">INNOVATION <i class="fas fa-chevron-right"></i></a>
+        <a href="heritage.html">HERITAGE <i class="fas fa-chevron-right"></i></a>
+        <a href="gallery.html">GALLERY <i class="fas fa-chevron-right"></i></a>
+        <a href="contact.html">CONTACT <i class="fas fa-chevron-right"></i></a>
+      </nav>
+    </div>
+    <div class="drawer-footer">
+      <a href="#" class="btn-primary open-test-drive" style="width: 100%; justify-content: center; margin-bottom: 1rem;">BOOK TEST DRIVE</a>
+      <div class="top-ticker-highlight" style="font-size: 0.75rem;">SCUDERIA FERRARI S.P.A.</div>
+    </div>
+  </div>
+
+  <!-- Hero Section with Cinema 1080p Video -->
   <section class="hero">
+    <!-- Channel Switcher -->
+    <div class="hero-video-switcher">
+      <button class="video-pill active" data-video="12cilindri"><i class="fas fa-bolt"></i> 12CILINDRI</button>
+      <button class="video-pill" data-video="499p"><i class="fas fa-flag-checkered"></i> 499P LE MANS</button>
+      <button class="video-pill" data-video="ss2026"><i class="fas fa-film"></i> SS2026</button>
+    </div>
+
     <div class="hero-background">
-      <!-- VIDEO BACKGROUND - This is the updated part -->
       <video autoplay muted loop playsinline class="hero-video">
-        <!-- Using Ferrari official video from their website -->
-        <source src="assets/videos/Ferrari_Reveals_the_New_Livery_of_the_Ferrari_499P_I_FIA_WEC_1080P.mp4" type="video/mp4">
-        <!-- Fallback image if video doesn't load -->
-        <img src="assets/images/662674823b051f0022eecd44-ferrari-499p-hypercar-2024-apr-powertrain-desk.avif" alt="Ferrari 499P" class="hero-image-fallback">
+        <source src="./assets/videos/Welcome_the_Ferrari_12Cilindri_1080P.mp4" type="video/mp4">
       </video>
-      
-      <!-- Dark Overlay -->
       <div class="hero-overlay"></div>
     </div>
-    
-    <!-- Hero Content (This part remains exactly the same) -->
+
     <div class="hero-content">
-      <!-- HYPERCAR tag -->
-      <div class="hero-category">HYPERCAR</div>
-      
-      <!-- Title -->
-      <h1 class="hero-title">FERRARI 499P</h1>
-      
-      <!-- Description -->
-      <p class="hero-description">
-        The Hypercar that won the 24 Hours of Le Mans three years in a row and was the star of the FIA WEC 2025 World Championship titles.
+      <div class="hero-category-wrap">
+        <span class="hero-category">
+          <span class="hero-category-dot"></span>
+          MARANELLO FLAGSHIP PREMIERE
+        </span>
+      </div>
+
+      <h1 class="hero-title">
+        FERRARI <span>12CILINDRI</span>
+      </h1>
+
+      <p class="hero-tagline">
+        6.5L NATURALLY ASPIRATED V12 • 830 CV • 9,500 RPM REDLINE
       </p>
-      
-      <!-- Scroll Indicator -->
+
+      <p class="hero-description">
+        The purest celebration of Ferrari's founding soul. Handcrafted in Maranello, combining uncompromising aerodynamic mastery with an uncompromised naturally aspirated atmospheric soundtrack.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="models.html" class="btn-primary">
+          EXPLORE LINEUP <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#" class="btn-outline open-test-drive" data-model="Ferrari 12Cilindri">
+          <i class="fas fa-calendar-check"></i> VIP TEST DRIVE
+        </a>
+        <button id="heroRevBtn" class="btn-rev-action">
+          <i class="fas fa-volume-up"></i> HEAR V12 ROAR
+        </button>
+      </div>
+    </div>
+
     <div class="scroll-indicator">
+      <span>TELEMETRY</span>
       <div class="scroll-line"></div>
     </div>
   </section>
 
-  <!-- Stats Strip -->
-  <div class="stats-strip">
-    <div class="stat-item">
-      <div class="stat-number">3x</div>
-      <div class="stat-label">LE MANS WINS</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">7</div>
-      <div class="stat-label">OVERALL VICTORIES</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">500 kW</div>
-      <div class="stat-label">POWER</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">800V</div>
-      <div class="stat-label">BATTERY</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">4WD</div>
-      <div class="stat-label">TRACTION</div>
+  <!-- Racing Telemetry HUD Strip -->
+  <div class="telemetry-strip">
+    <div class="telemetry-container">
+      <div class="telemetry-cell">
+        <div class="telemetry-header">
+          <span class="telemetry-label">0-100 KM/H ACCELERATION</span>
+          <i class="fas fa-stopwatch telemetry-icon"></i>
+        </div>
+        <div class="telemetry-value">2.9 <span class="telemetry-unit">SEC</span></div>
+        <div class="telemetry-subtext">0-200 km/h in 7.9s • Launch Control</div>
+      </div>
+
+      <div class="telemetry-cell">
+        <div class="telemetry-header">
+          <span class="telemetry-label">MAX ENGINE POWER</span>
+          <i class="fas fa-tachometer-alt telemetry-icon"></i>
+        </div>
+        <div class="telemetry-value">830 <span class="telemetry-unit">CV</span></div>
+        <div class="telemetry-subtext">At 9,250 RPM • Naturally Aspirated V12</div>
+      </div>
+
+      <div class="telemetry-cell">
+        <div class="telemetry-header">
+          <span class="telemetry-label">MAX SPEED</span>
+          <i class="fas fa-wind telemetry-icon"></i>
+        </div>
+        <div class="telemetry-value">&gt;340 <span class="telemetry-unit">KM/H</span></div>
+        <div class="telemetry-subtext">Active Aerodynamic Rear Flaps</div>
+      </div>
+
+      <div class="telemetry-cell">
+        <div class="telemetry-header">
+          <span class="telemetry-label">DISPLACEMENT</span>
+          <i class="fas fa-cogs telemetry-icon"></i>
+        </div>
+        <div class="telemetry-value">6,496 <span class="telemetry-unit">CC</span></div>
+        <div class="telemetry-subtext">F140HD 65° V12 Mid-Front Architecture</div>
+      </div>
     </div>
   </div>
 
-  <!-- Overview Section -->
-  <section id="overview" class="section">
-    <div class="section-header">
-      <span class="section-subtitle">A car already part of motorsport history</span>
-      <h2 class="section-title">The Hypercar that has dominated the global endurance scene</h2>
-    </div>
-    
-    <div class="overview-grid">
-      <div class="overview-content">
-        <p class="lead-text">The 499P has already written its name into Ferrari's racing heritage, bringing the Prancing Horse back to the top tier of endurance racing since 2023 with seven overall victories and three consecutive wins at the 24 Hours of Le Mans.</p>
-        <p>At the heart of the project remains the hybrid powertrain: a centrally mounted twin‑turbo V6 engine paired with an electric motor on the front axle, working together to ensure consistent performance and energy efficiency throughout each race.</p>
-        <div class="feature-list">
-          <div class="feature-item">
-            <i class="fas fa-check-circle"></i>
-            <span>V6 ICE ENGINE</span>
-          </div>
-          <div class="feature-item">
-            <i class="fas fa-check-circle"></i>
-            <span>500 kW POWER</span>
-          </div>
-          <div class="feature-item">
-            <i class="fas fa-check-circle"></i>
-            <span>800 V BATTERY</span>
-          </div>
-          <div class="feature-item">
-            <i class="fas fa-check-circle"></i>
-            <span>4WD TRACTION</span>
-          </div>
-        </div>
-      </div>
-      <div class="overview-image">
-        <img src="assets/images/67af08a0ef0bda001197c27c-499p-2025-launch-land.jpg" alt="Ferrari 499P">
-      </div>
-    </div>
-  </section>
-
-  <!-- Powertrain Section -->
-  <section id="powertrain" class="section dark-section">
+  <!-- Interactive V12 Acoustic Test Bench & Tachometer -->
+  <section class="section">
     <div class="section-header centered">
-      <span class="section-subtitle">Hybrid Power Revamped</span>
-      <h2 class="section-title">V6 ICE ENGINE • 500 kW • 800V • 4WD</h2>
+      <span class="section-eyebrow"><i class="fas fa-wave-square"></i> ACOUSTIC TEST BENCH</span>
+      <h2 class="section-title">THE SOUND OF <span>PURE POWER</span></h2>
+      <p class="section-desc">Experience the symphony of Maranello's atmospheric 6.5-liter V12 engine revving up to its 9,500 RPM crescendo in real time.</p>
     </div>
-    
-    <div class="powertrain-grid">
-      <div class="powertrain-card">
-        <div class="card-icon"><i class="fas fa-engine"></i></div>
-        <h3>V6 ICE ENGINE</h3>
-        <p>The internal combustion engine delivers a regulation-limited maximum output of 500 kW (680 hp). Derived from Ferrari's road‑going V6 family, it features tailored components and substantial weight optimization.</p>
-      </div>
-      
-      <div class="powertrain-card">
-        <div class="card-icon"><i class="fas fa-bolt"></i></div>
-        <h3>ERS SYSTEM</h3>
-        <p>The Energy Recovery System delivers up to 200 kW (272 hp). Energy recovered under braking is stored in an 800V battery developed using Formula 1 expertise.</p>
-      </div>
-      
-      <div class="powertrain-card">
-        <div class="card-icon"><i class="fas fa-cogs"></i></div>
-        <h3>7-SPEED GEARBOX</h3>
-        <p>Power delivery is handled by a seven‑speed sequential gearbox engineered to withstand the extreme demands of endurance competition.</p>
-      </div>
-      
-      <div class="powertrain-card">
-        <div class="card-icon"><i class="fas fa-car"></i></div>
-        <h3>LOAD-BEARING ENGINE</h3>
-        <p>Unlike the 296 GT3, the V6 in the 499P is fully load‑bearing, contributing structurally to the car's rigidity. The internal combustion unit comprises approximately 500 components.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Aerodynamics Section -->
-  <section id="aerodynamics" class="section">
-    <div class="section-header">
-      <span class="section-subtitle">Shaped by the Wind</span>
-      <h2 class="section-title">Balanced Performance</h2>
-    </div>
-    
-    <div class="aero-grid">
-      <div class="aero-content">
-        <p class="lead-text">Recent updates include targeted interventions to control rear brake temperatures and refine aerodynamic stability. Two additional nose elements help optimize airflow distribution with minimal impact on outright lap time.</p>
-        
-        <div class="aero-features">
-          <div class="aero-feature">
-            <h3><i class="fas fa-wing"></i> Adjustable Rear Wing</h3>
-            <p>A regulation‑compliant adjustable aerodynamic device is integrated into the rear wing, allowing engineers to fine‑tune load distribution between the front and rear axles.</p>
+    <div class="acoustic-bench">
+      <div class="acoustic-grid">
+        <div class="tachometer-cluster">
+          <!-- F1 Shift LED Bar -->
+          <div class="shift-light-bar">
+            <span class="shift-led green"></span>
+            <span class="shift-led green"></span>
+            <span class="shift-led green"></span>
+            <span class="shift-led yellow"></span>
+            <span class="shift-led yellow"></span>
+            <span class="shift-led yellow"></span>
+            <span class="shift-led red"></span>
+            <span class="shift-led red"></span>
+            <span class="shift-led blue"></span>
+            <span class="shift-led blue"></span>
           </div>
-          
-          <div class="aero-feature">
-            <h3><i class="fas fa-wind"></i> Heat Management</h3>
-            <p>Large vents behind the front wheels discharge hot air generated by the braking system. Development included simulations, wind tunnel work, simulator sessions and track testing over more than 22 months.</p>
+
+          <!-- Digital Gauge -->
+          <div class="gauge-wrapper">
+            <div class="gauge-glow" id="gaugeGlow"></div>
+            <div class="gauge-readout">
+              <div class="gauge-rpm" id="gaugeRpm">1,000</div>
+              <div class="gauge-label">RPM × 1000</div>
+              <div class="gauge-gear">GEAR: 1</div>
+            </div>
           </div>
-          
-          <div class="aero-feature">
-            <h3><i class="fas fa-battery-full"></i> ERS Integration</h3>
-            <p>The electric unit in the 499P operates either independently or in tandem with the front brake discs to decelerate the car during braking. During acceleration, it enables the activation of the 4WD system.</p>
+        </div>
+
+        <div class="acoustic-info">
+          <h3>FEEL THE <span>REDLINE</span></h3>
+          <p>
+            Tuned titanium connecting rods, diamond-like carbon (DLC) coated finger followers, and equal-length 6-into-1 racing manifolds generate an unadulterated acoustic roar. Hold down the accelerator to rev the engine!
+          </p>
+
+          <div class="rev-controls">
+            <button id="revHoldBtn" class="rev-hold-button">
+              <i class="fas fa-gas-pump"></i> PRESS &amp; HOLD TO REV
+            </button>
+            <div class="rev-hint">
+              <i class="fas fa-info-circle"></i> Built with browser Web Audio synthesizer. Release button to hear exhaust overrun.
+            </div>
           </div>
         </div>
       </div>
-      <div class="aero-image">
-        <img src="assets/images/20221031013826_Ferrari_499p_front.jpg" alt="Ferrari 499P Aerodynamics">
-      </div>
     </div>
   </section>
 
-  <!-- Steering Wheel Section -->
-  <section class="steering-section dark-section">
-    <div class="steering-container">
-      <div class="steering-content">
-        <span class="section-subtitle">RADIO CHECK!</span>
-        <h2 class="section-title">The 499P Steering Wheel</h2>
-        <p>The left side of the 499P's steering wheel features tactile controls that drivers frequently use in the course of a race weekend.</p>
-        
-        <div class="controls-grid">
-          <div class="control-item">
-            <span class="control-code">RA</span>
-            <span class="control-desc">Radio Communication</span>
-          </div>
-          <div class="control-item">
-            <span class="control-code">FCY</span>
-            <span class="control-desc">Full Course Yellow</span>
-          </div>
-          <div class="control-item">
-            <span class="control-code">SCR</span>
-            <span class="control-desc">Scroll Screens</span>
-          </div>
-          <div class="control-item">
-            <span class="control-code">FLA</span>
-            <span class="control-desc">Flash High Beam</span>
-          </div>
-          <div class="control-item">
-            <span class="control-code">PIT</span>
-            <span class="control-desc">Pit Speed Limiter</span>
-          </div>
-          <div class="control-item">
-            <span class="control-code">DRI</span>
-            <span class="control-desc">Drink System</span>
-          </div>
-        </div>
-      </div>
-      <div class="steering-image">
-        <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_steering_wheel_01_1920x1080.webp" alt="Ferrari 499P Steering Wheel">
-      </div>
-    </div>
-  </section>
-
-  <!-- Livery Gallery -->
-  <section id="gallery" class="section">
+  <!-- Bespoke Atelier Color Studio -->
+  <section class="section dark-section" id="configurator">
     <div class="section-header centered">
-      <span class="section-subtitle">2026 LIVERY</span>
-      <h2 class="section-title">The Evolution of Excellence</h2>
+      <span class="section-eyebrow"><i class="fas fa-palette"></i> FERRARI ATELIER</span>
+      <h2 class="section-title">TAILOR-MADE <span>LIVERY STUDIO</span></h2>
+      <p class="section-desc">Select an iconic Maranello finish to configure your bespoke Ferrari aesthetic with high-gloss automotive pigments.</p>
     </div>
-    
-    <div class="livery-showcase">
-      <div class="livery-main">
-        <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_2026_livery_front_01_1920x1080.webp" alt="Ferrari 499P 2026 Livery" id="mainLivery">
-      </div>
-      <div class="livery-thumbnails">
-        <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_2026_livery_front_01_1920x1080.webp" alt="2026" class="thumbnail active" onclick="changeLivery(this.src)">
-        <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_livery_2025_front_01_1920x1080.webp" alt="2025" class="thumbnail" onclick="changeLivery(this.src)">
-        <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_livery_2024_front_01_1920x1080.webp" alt="2024" class="thumbnail" onclick="changeLivery(this.src)">
-        <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_livery_2023_front_01_1920x1080.webp" alt="2023" class="thumbnail" onclick="changeLivery(this.src)">
+
+    <div class="bespoke-studio">
+      <div class="studio-grid">
+        <div class="studio-stage">
+          <div class="stage-floor-light"></div>
+          <img src="assets/images/im3.jpg" alt="Ferrari Atelier Studio" class="car-stage-image" id="atelierCarImg">
+        </div>
+
+        <div class="studio-details">
+          <span class="section-eyebrow">CUSTOM COLORWAY</span>
+          <h3 id="paintName">Rosso Corsa</h3>
+          <div class="paint-name">
+            <i class="fas fa-certificate"></i> <span id="paintCode">FER 322</span>
+          </div>
+
+          <div class="color-swatch-list">
+            <button class="swatch-btn swatch-rosso active" data-color="rosso" title="Rosso Corsa"></button>
+            <button class="swatch-btn swatch-giallo" data-color="giallo" title="Giallo Modena"></button>
+            <button class="swatch-btn swatch-nero" data-color="nero" title="Nero Daytona"></button>
+            <button class="swatch-btn swatch-bianco" data-color="bianco" title="Bianco Avus"></button>
+            <button class="swatch-btn swatch-blu" data-color="blu" title="Blu Tour de France"></button>
+          </div>
+
+          <div class="paint-specs">
+            <div class="paint-spec-item">
+              <span>FINISH TYPE</span>
+              <span id="paintType">Three-layer Racing Gloss</span>
+            </div>
+            <div class="paint-spec-item">
+              <span>CLEAR COAT</span>
+              <span>Ceramic Nanotech Seal</span>
+            </div>
+            <div class="paint-spec-item">
+              <span>ORIGIN</span>
+              <span>Maranello Paint Lab</span>
+            </div>
+            <div class="paint-spec-item">
+              <span>TRIM ACCENTS</span>
+              <span>Gloss Carbon Fiber</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#" class="btn-primary open-test-drive" data-model="Tailor-Made Spec">
+              ORDER SPECIFICATION <i class="fas fa-check"></i>
+            </a>
+            <a href="models.html" class="btn-outline">
+              ALL OPTIONS
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Video Gallery -->
-  <section class="video-section dark-section">
+  <!-- Featured Models Collection (Filterable) -->
+  <section class="section">
     <div class="section-header centered">
-      <span class="section-subtitle">Videos</span>
-      <h2 class="section-title">The 499P in Motion</h2>
+      <span class="section-eyebrow"><i class="fas fa-car-side"></i> MARANELLO COLLECTION</span>
+      <h2 class="section-title">THE CURRENT <span>LINEUP</span></h2>
+      <p class="section-desc">From championship-winning Le Mans hypercars to open-top grand tourers, explore the cutting edge of performance.</p>
     </div>
-    
-    <div class="swiper-container video-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="video-card">
-            <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_2026_livery_hero_01_1920x1080.webp" alt="Video Thumbnail">
-            <div class="play-button"><i class="fas fa-play"></i></div>
-          </div>
+
+    <!-- Filter Pills -->
+    <div class="model-filter-tabs">
+      <button class="filter-pill active" data-filter="all">ALL MODELS</button>
+      <button class="filter-pill" data-filter="hypercar">HYPERCARS</button>
+      <button class="filter-pill" data-filter="v12">V12 BERLINETTA</button>
+      <button class="filter-pill" data-filter="hybrid">HYBRID SUPERCAR</button>
+      <button class="filter-pill" data-filter="gt">GT &amp; SPIDER</button>
+    </div>
+
+    <div class="featured-grid">
+      <!-- 12Cilindri -->
+      <div class="featured-card" data-category="v12">
+        <div class="card-image-wrap">
+          <img src="assets/images/im3.jpg" alt="Ferrari 12Cilindri">
+          <span class="card-category-badge">V12 FLAGSHIP</span>
         </div>
-        <div class="swiper-slide">
-          <div class="video-card">
-            <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_livery_2025_dynamic_01_1920x1080.webp" alt="Video Thumbnail">
-            <div class="play-button"><i class="fas fa-play"></i></div>
+        <div class="card-content">
+          <h3>Ferrari 12Cilindri</h3>
+          <p>Naturally aspirated 6.5L V12 atmospheric masterpiece delivering pure acoustic exhilaration.</p>
+          <div class="card-specs-row">
+            <div class="spec-mini-item">
+              <span class="spec-label">POWER</span>
+              <span class="spec-val">830 CV</span>
+            </div>
+            <div class="spec-mini-item">
+              <span class="spec-label">0-100</span>
+              <span class="spec-val">2.9s</span>
+            </div>
+            <div class="spec-mini-item">
+              <span class="spec-label">TOP SPEED</span>
+              <span class="spec-val">340+ km/h</span>
+            </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="video-card">
-            <img src="https://www.ferrari.com//cm/sites/CNAAS5F42535389/images/img_ferrari_499p_livery_2024_profile_01_1920x1080.webp" alt="Video Thumbnail">
-            <div class="play-button"><i class="fas fa-play"></i></div>
+          <div class="card-actions">
+            <a href="models.html" class="btn-card-primary">EXPLORE MODEL <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="btn-card-icon open-test-drive" data-model="Ferrari 12Cilindri" title="Configure"><i class="fas fa-cog"></i></a>
           </div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+
+      <!-- Ferrari 499P -->
+      <div class="featured-card" data-category="hypercar">
+        <div class="card-image-wrap">
+          <img src="assets/images/67af08a0ef0bda001197c27c-499p-2025-launch-land.jpg" alt="Ferrari 499P Hypercar">
+          <span class="card-category-badge" style="color: var(--ferrari-yellow);"><i class="fas fa-trophy"></i> 3x LE MANS WINNER</span>
+        </div>
+        <div class="card-content">
+          <h3>Ferrari 499P</h3>
+          <p>The FIA WEC Le Mans Hypercar Champion combining a twin-turbo V6 with an 800V electric front axle.</p>
+          <div class="card-specs-row">
+            <div class="spec-mini-item">
+              <span class="spec-label">OUTPUT</span>
+              <span class="spec-val">500 kW</span>
+            </div>
+            <div class="spec-mini-item">
+              <span class="spec-label">DRIVE</span>
+              <span class="spec-val">4WD Hybrid</span>
+            </div>
+            <div class="spec-mini-item">
+              <span class="spec-label">BATTERY</span>
+              <span class="spec-val">800 Volt</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="499.html" class="btn-card-primary">LE MANS DOSSIER <i class="fas fa-arrow-right"></i></a>
+            <a href="gallery.html" class="btn-card-icon" title="View Gallery"><i class="fas fa-images"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SF90 Stradale -->
+      <div class="featured-card" data-category="hybrid">
+        <div class="card-image-wrap">
+          <img src="https://images.unsplash.com/photo-1592198084033-ade5c5bae51c?w=800" alt="Ferrari SF90 Stradale">
+          <span class="card-category-badge">HYBRID SUPERCAR</span>
+        </div>
+        <div class="card-content">
+          <h3>SF90 Stradale</h3>
+          <p>Ferrari's plug-in hybrid hypercar with three electric motors and twin-turbo V8 technology.</p>
+          <div class="card-specs-row">
+            <div class="spec-mini-item">
+              <span class="spec-label">POWER</span>
+              <span class="spec-val">1000 CV</span>
+            </div>
+            <div class="spec-mini-item">
+              <span class="spec-label">0-100</span>
+              <span class="spec-val">2.5s</span>
+            </div>
+            <div class="spec-mini-item">
+              <span class="spec-label">E-RANGE</span>
+              <span class="spec-val">25 km</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="models.html" class="btn-card-primary">EXPLORE MODEL <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="btn-card-icon open-test-drive" data-model="Ferrari SF90 Stradale" title="Configure"><i class="fas fa-cog"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- F8 Tributo -->
+      <div class="featured-card" data-category="gt">
+        <div class="card-image-wrap">
+          <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800" alt="Ferrari F8 Tributo">
+          <span class="card-category-badge">V8 TURBO</span>
+        </div>
+        <div class="card-content">
+          <h3>F8 Tributo</h3>
+          <p>The ultimate homage to Ferrari's most celebrated mid-rear twin-turbocharged V8 engine.</p>
+          <div class="card-specs-row">
+            <div class="spec-mini-item">
+              <span class="spec-label">POWER</span>
+              <span class="spec-val">720 CV</span>
+            </div>
+            <div class="spec-mini-item">
+              <span class="spec-label">0-100</span>
+              <span class="spec-val">2.9s</span>
+            </div>
+            <div class="spec-mini-item">
+              <span class="spec-label">TOP SPEED</span>
+              <span class="spec-val">340 km/h</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="models.html" class="btn-card-primary">EXPLORE MODEL <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="btn-card-icon open-test-drive" data-model="Ferrari F8 Tributo" title="Configure"><i class="fas fa-cog"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ferrari Roma Spider -->
+      <div class="featured-card" data-category="gt">
+        <div class="card-image-wrap">
+          <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?w=800" alt="Ferrari Roma Spider">
+          <span class="card-category-badge">LA DOLCE VITA</span>
+        </div>
+        <div class="card-content">
+          <h3>Roma Spider</h3>
+          <p>Timeless elegance combined with 2+ front-mid mounted twin-turbo V8 grand touring performance.</p>
+          <div class="card-specs-row">
+            <div class="spec-mini-item">
+              <span class="spec-label">POWER</span>
+              <span class="spec-val">620 CV</span>
+            </div>
+            <div class="spec-mini-item">
+              <span class="spec-label">ROOF</span>
+              <span class="spec-val">13.5s Soft</span>
+            </div>
+            <div class="spec-mini-item">
+              <span class="spec-label">0-100</span>
+              <span class="spec-val">3.4s</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="models.html" class="btn-card-primary">EXPLORE MODEL <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="btn-card-icon open-test-drive" data-model="Ferrari Roma Spider" title="Configure"><i class="fas fa-cog"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Daytona SP3 -->
+      <div class="featured-card" data-category="hypercar">
+        <div class="card-image-wrap">
+          <img src="assets/images/im1.jpg" alt="Ferrari Daytona SP3">
+          <span class="card-category-badge" style="color: var(--ferrari-yellow);">ICONA SERIES</span>
+        </div>
+        <div class="card-content">
+          <h3>Daytona SP3</h3>
+          <p>Limited-edition Icona celebrating the legendary 1967 24 Hours of Daytona 1-2-3 Ferrari finish.</p>
+          <div class="card-specs-row">
+            <div class="spec-mini-item">
+              <span class="spec-label">POWER</span>
+              <span class="spec-val">840 CV</span>
+            </div>
+            <div class="spec-mini-item">
+              <span class="spec-label">ENGINE</span>
+              <span class="spec-val">Mid V12</span>
+            </div>
+            <div class="spec-mini-item">
+              <span class="spec-label">0-100</span>
+              <span class="spec-val">2.85s</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="499.html" class="btn-card-primary">HISTORIC DOSSIER <i class="fas fa-arrow-right"></i></a>
+            <a href="heritage.html" class="btn-card-icon" title="Heritage"><i class="fas fa-flag-checkered"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 4rem;">
+      <a href="models.html" class="btn-outline">
+        VIEW ENTIRE MARANELLO SHOWROOM <i class="fas fa-arrow-right"></i>
+      </a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="contact-container">
-      <div class="contact-info">
-        <h2>Born from <span>Endurance Expertise</span></h2>
-        <p>The Ferrari 499P is a manifesto to our commitment to endurance racing. The four-wheel drive prototype complies with the technical regulations and requirements of the hybrid-engined Le Mans Hypercar class.</p>
-        <p><strong>499P Modificata:</strong> A strictly limited edition car, intended for non-competitive track use, derived from the 499P that won the 24 Hours of Le Mans.</p>
+  <!-- Aerodynamics & Innovation Section -->
+  <section class="innovation-preview dark-section">
+    <div class="innovation-preview-container">
+      <div class="innovation-preview-content">
+        <span class="section-eyebrow"><i class="fas fa-wind"></i> SCUDERIA AERODYNAMICS</span>
+        <h2>ACTIVE DOWNFORCE &amp; <span>F1 INTEGRATION</span></h2>
+        <p>Every surface sculpts airflow to produce high-speed stability without adding parasitic aerodynamic drag. Born directly from Formula 1 track wind tunnels.</p>
+
+        <div class="aero-features-list">
+          <div class="aero-feature-item">
+            <div class="aero-feature-icon"><i class="fas fa-compress-arrows-alt"></i></div>
+            <div class="aero-feature-text">
+              <h4>Active Mobile Aero Flaps</h4>
+              <p>Autonomous flaps modulate between Low Drag (LD) and High Downforce (HD) modes in under 60 milliseconds.</p>
+            </div>
+          </div>
+
+          <div class="aero-feature-item">
+            <div class="aero-feature-icon"><i class="fas fa-microchip"></i></div>
+            <div class="aero-feature-text">
+              <h4>Side Slip Control 8.0 (SSC)</h4>
+              <p>Predictive electronic yaw control evaluates tire friction limits continuously at millisecond intervals.</p>
+            </div>
+          </div>
+
+          <div class="aero-feature-item">
+            <div class="aero-feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="aero-feature-text">
+              <h4>Carbon-Ceramic CCM-R Plus</h4>
+              <p>Direct track-derived braking discs with 100% higher thermal conductivity and zero fade.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="innovation.html" class="btn-primary">
+          EXPLORE TECH DOSSIER <i class="fas fa-arrow-right"></i>
+        </a>
       </div>
-      
-      <form class="contact-form" id="contactForm">
-        <h3>Request Information</h3>
-        <div class="form-group">
-          <input type="text" id="name" placeholder=" " required>
-          <label for="name">Full Name</label>
+
+      <div class="innovation-preview-image">
+        <img src="https://images.unsplash.com/photo-1554744512-d6c603f27c54?w=800" alt="Ferrari Engine and Aero">
+        <div class="aero-hud-badge">
+          <div>
+            <div class="aero-hud-val">500 KG</div>
+            <div class="aero-hud-label">DOWNFORCE @ 250 KM/H</div>
+          </div>
+          <div style="border-left: 1px solid var(--ferrari-border); padding-left: 1.5rem;">
+            <div class="aero-hud-val" style="color: var(--ferrari-yellow);">0.29</div>
+            <div class="aero-hud-label">DRAG COEFFICIENT (Cd)</div>
+          </div>
         </div>
-        <div class="form-group">
-          <input type="email" id="email" placeholder=" " required>
-          <label for="email">Email Address</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- World Championship Heritage Strip -->
+  <div class="heritage-strip">
+    <div class="heritage-grid">
+      <div class="heritage-item">
+        <div class="trophy-icon"><i class="fas fa-trophy"></i></div>
+        <div class="heritage-number">16</div>
+        <div class="heritage-label">F1 Constructors' World Championships</div>
+      </div>
+
+      <div class="heritage-item">
+        <div class="trophy-icon"><i class="fas fa-crown"></i></div>
+        <div class="heritage-number">15</div>
+        <div class="heritage-label">F1 Drivers' World Championships</div>
+      </div>
+
+      <div class="heritage-item">
+        <div class="trophy-icon"><i class="fas fa-medal"></i></div>
+        <div class="heritage-number">11</div>
+        <div class="heritage-label">24 Hours of Le Mans Overall Victories</div>
+      </div>
+
+      <div class="heritage-item">
+        <div class="trophy-icon"><i class="fas fa-flag-checkered"></i></div>
+        <div class="heritage-number">5,000+</div>
+        <div class="heritage-label">Trophies Won Globally Since 1947</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIP Test Drive / Configurator Modal -->
+  <div class="modal-backdrop" id="testDriveModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+
+      <div class="modal-header">
+        <span class="section-eyebrow"><i class="fas fa-shield-alt"></i> SCUDERIA CONCIERGE</span>
+        <h3>BOOK YOUR <span>PRIVATE TEST DRIVE</span></h3>
+        <p>Experience precision performance with an official Maranello track instructor.</p>
+      </div>
+
+      <form id="modalTestDriveForm">
+        <div class="modal-row">
+          <div class="modal-field">
+            <label for="modalModelSelect">Select Model</label>
+            <select id="modalModelSelect" required>
+              <option value="Ferrari 12Cilindri">Ferrari 12Cilindri</option>
+              <option value="Ferrari 499P Modificata">Ferrari 499P Modificata</option>
+              <option value="Ferrari SF90 Stradale">Ferrari SF90 Stradale</option>
+              <option value="Ferrari 296 GTB">Ferrari 296 GTB</option>
+              <option value="Ferrari Roma Spider">Ferrari Roma Spider</option>
+            </select>
+          </div>
+
+          <div class="modal-field">
+            <label for="modalDealership">Select Dealership</label>
+            <select id="modalDealership" required>
+              <option value="Maranello HQ">Maranello Flagship (Italy)</option>
+              <option value="Milan">Milan Montenapoleone</option>
+              <option value="London">London Mayfair</option>
+              <option value="New York">New York Park Avenue</option>
+              <option value="Tokyo">Tokyo Ginza</option>
+              <option value="Dubai">Dubai Downtown</option>
+            </select>
+          </div>
         </div>
-        <div class="form-group">
-          <input type="text" id="country" placeholder=" ">
-          <label for="country">Country</label>
+
+        <div class="modal-row">
+          <div class="modal-field">
+            <label for="modalName">Full Name</label>
+            <input type="text" id="modalName" placeholder="Lord / Lady / Mr. / Ms." required>
+          </div>
+
+          <div class="modal-field">
+            <label for="modalPhone">Contact Phone</label>
+            <input type="tel" id="modalPhone" placeholder="+1 (555) 000-0000" required>
+          </div>
         </div>
-        <div class="form-group">
-          <textarea id="message" rows="4" placeholder=" "></textarea>
-          <label for="message">Message</label>
+
+        <div class="modal-field">
+          <label for="modalEmail">Official Email</label>
+          <input type="email" id="modalEmail" placeholder="client@domain.com" required>
         </div>
-        <button type="submit" class="btn-primary">Send Inquiry <i class="fas fa-paper-plane"></i></button>
+
+        <button type="submit" class="modal-btn-submit">
+          CONFIRM VIP RESERVATION <i class="fas fa-arrow-right"></i>
+        </button>
       </form>
     </div>
-  </section>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-logo">
-        <span class="logo">FERRARI<span>499P</span></span>
-        <p>The Hypercar that has dominated the global endurance scene over the past three years returns for the 2026 season with a refreshed visual identity and the ambition to consolidate its supremacy.</p>
+        <span class="logo">FERRARI</span>
+        <p>Handcrafted in Maranello since 1947. Engineering the pinnacle of Italian motorsport excellence and automotive emotion.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
       </div>
-      
+
       <div class="footer-links">
         <div class="footer-column">
-          <h4>Explore</h4>
+          <h4>Models</h4>
           <ul>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#powertrain">Powertrain</a></li>
-            <li><a href="#aerodynamics">Aerodynamics</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="models.html">12Cilindri</a></li>
+            <li><a href="499.html">499P Hypercar</a></li>
+            <li><a href="models.html">SF90 XX Stradale</a></li>
+            <li><a href="models.html">Roma Spider</a></li>
+            <li><a href="models.html">296 GTB</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-column">
-          <h4>Follow</h4>
+          <h4>Scuderia</h4>
           <ul>
-            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
-            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="heritage.html">Racing Heritage</a></li>
+            <li><a href="innovation.html">Aerodynamics</a></li>
+            <li><a href="499.html">Le Mans 24 Hours</a></li>
+            <li><a href="gallery.html">Media Gallery</a></li>
+            <li><a href="contact.html">Atelier Maranello</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-column">
-          <h4>Legal</h4>
+          <h4>Client Services</h4>
           <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Cookies</a></li>
+            <li><a href="#" class="open-test-drive">Book Test Drive</a></li>
+            <li><a href="contact.html">Authorized Dealers</a></li>
+            <li><a href="#">Ferrari Financial</a></li>
+            <li><a href="#">Privacy &amp; Cookie Policy</a></li>
+            <li><a href="#">Corporate Governance</a></li>
           </ul>
         </div>
       </div>
     </div>
-    
+
     <div class="footer-bottom">
-      <p>© 2026 Ferrari S.p.A. All rights reserved. The 499P is a trademark of Ferrari.</p>
-      <p>Website inspired by the official Ferrari 499P Hypercar</p>
+      <div>&copy; 2026 Ferrari S.p.A. — A company under Italian law. All rights reserved.</div>
+      <div class="footer-bottom-tricolore">
+        <div class="tricolore-pill"><span></span><span></span><span></span></div>
+        <span>MARANELLO, MODENA, ITALY</span>
+      </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
